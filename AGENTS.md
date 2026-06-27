@@ -160,3 +160,20 @@ feature at once.** The user reviews each commit to understand how each piece wor
 `meta` · `layers` + `layer_policy` · `components[]` · `rules[]` · `decisions[]` ·
 `tech_stack[]` + `scaffold_manifest{}`. See `backend/app/analyzer/archguard.py` for
 the generator. Closed-world dependency edges; 26 validation invariants.
+
+## 9. Build status
+
+| Unit | Component | Status |
+|------|-----------|--------|
+| U1a | Backend scaffolding (FastAPI, models, config) | ✅ |
+| U1b | Frontend scaffolding (Vite, React Flow, Tailwind) | ✅ |
+| U2 | GitHub fetcher service | ✅ |
+| U3 | AST extraction engine (tree-sitter + regex) | ✅ |
+| U4 | LLM architecture interpreter (GLM/Claude/GPT) | ✅ |
+| U5 | Backend API layer (SSE streaming, endpoints) | ✅ |
+| U6 | Frontend routing, pages, loading states | ✅ |
+| U7 | React Flow canvas, custom nodes/edges | ✅ |
+| U8 | Component selection UI | ✅ |
+| U9-U10 | v0.2-0.3: repo indexing + comparison normalization | ⏳ deferred |
+
+All 64 backend tests pass. TypeScript build zero errors.
