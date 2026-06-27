@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-arch-green: #22c55e;
+  --color-arch-yellow: #eab308;
+  --color-arch-red: #ef4444;
+  --color-arch-bg: #030712;
+  --color-arch-surface: #111827;
+  --color-arch-border: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
